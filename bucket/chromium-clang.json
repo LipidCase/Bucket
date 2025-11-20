@@ -6,7 +6,8 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/RobRich999/Chromium_Clang/releases/download/v144.0.7510.0-r1540236-win64-avx512/chrome.zip",
-            "hash": "sha1:dc550e825fe8e6018bf9cf988abd219b0007f48e"
+            "hash": "sha1:dc550e825fe8e6018bf9cf988abd219b0007f48e",
+            "extract_dir": "chrome-win32"
         }
     },
     "bin": [
@@ -35,7 +36,8 @@
                 "hash": {
                     "url": "https://github.com/RobRich999/Chromium_Clang/releases/tag/v$version-r$matchRevision-win64-avx512",
                     "regex": "chrome\\.zip\\s+-\\s+([a-fA-F0-9]{40})"
-                }
+                },
+                "extract_dir": "chrome-win32"
             }
         }
     }
