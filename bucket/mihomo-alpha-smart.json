@@ -1,5 +1,5 @@
 {
-    "version": "alpha-smart-9ba4494",
+    "version": "alpha-smart-836c972",
     "description": "A simple Python Pydantic model for Honkai: Star Rail parsed data from the Mihomo API.",
     "homepage": "https://github.com/vernesong/mihomo",
     "license": "GPL-3.0-or-later",
@@ -25,7 +25,11 @@
             "clash"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/vernesong/mihomo/releases/tags/Prerelease-Alpha",
+        "jsonpath": "$.assets[*].name",
+        "regex": "mihomo-windows-amd64-(alpha-smart-[a-f0-9]+)\\.zip"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
