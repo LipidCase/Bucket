@@ -26,8 +26,9 @@
     ],
     "persist": "User Data",
     "checkver": {
-        "github": "https://github.com/RobRich999/Chromium_Clang",
-        "regex": "releases/tag/v(?<version>[\\d.]+)-r(?<revision>\\d+)-win64-avx512"
+        "url": "https://api.github.com/repos/RobRich999/Chromium_Clang/releases",
+        "jsonpath": "$[*].tag_name",
+        "regex": "v(?<version>[\\d.]+)-r(?<revision>\\d+)-win64-avx512"
     },
     "autoupdate": {
         "architecture": {
@@ -35,9 +36,6 @@
                 "url": "https://github.com/RobRich999/Chromium_Clang/releases/download/v$version-r$matchRevision-win64-avx512/chrome.zip",
                 "extract_dir": "chrome-win32"
             }
-        },
-        "hash": {
-            "url": "$url.sha256"
         }
     }
 }

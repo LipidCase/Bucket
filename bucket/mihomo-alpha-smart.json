@@ -1,20 +1,20 @@
 {
-    "version": "alpha-smart-9ba4494",
+    "version": "alpha-smart-836c972",
     "description": "A simple Python Pydantic model for Honkai: Star Rail parsed data from the Mihomo API.",
     "homepage": "https://github.com/vernesong/mihomo",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-amd64-alpha-smart-9ba4494.zip",
-            "hash": "b4ebf336bdd4c908c59ab109620d9540723d5e8bdf4b500c9c1e49897330042b"
+            "url": "https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-amd64-alpha-836c972.zip",
+            "hash": "e780858bcaad6d77643259ea57dcd60ef21d3eea5390a0c7de03547790e8b78b"
         },
         "32bit": {
-            "url": "https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-386-alpha-smart-9ba4494.zip",
-            "hash": "c8c2bb684461c3d39b19a5dfe63592482f20b1bcd7f00458ed849f654ba19891"
+            "url": "https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-386-alpha-836c972.zip",
+            "hash": "c7df7871cde5070eef2db5b184036921799c81bf214d889341d71994f9a3bc6c"
         },
         "arm64": {
-            "url": "https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-arm64-alpha-smart-9ba4494.zip",
-            "hash": "edb23aa46c4f5355de5899b4b15196830172b9070730956f5dfc848919e9ae2b"
+            "url": "https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-arm64-alpha-836c972.zip",
+            "hash": "029dc5c50f4d0cdec8544b28b8f569bd802993fe12b75120bdd8eaf0d28eea2e"
         }
     },
     "pre_install": "Get-ChildItem \"$dir\\mihomo*.exe\" | Rename-Item -NewName 'mihomo.exe'",
@@ -28,12 +28,12 @@
     "checkver": {
         "url": "https://api.github.com/repos/vernesong/mihomo/releases/tags/Prerelease-Alpha",
         "jsonpath": "$.assets[*].name",
-        "regex": "mihomo-windows-amd64-(alpha-smart-[a-f0-9]+)\\.zip"
+        "regex": "mihomo-windows-amd64-v3-(alpha-smart-[a-f0-9]+)\\.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-amd64-$version.zip"
+                "url": "https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-amd64-v3-$version.zip"
             },
             "32bit": {
                 "url": "https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-386-$version.zip"
