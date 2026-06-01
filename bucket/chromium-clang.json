@@ -1,12 +1,12 @@
 {
-    "version": "149.0.7785.0",
+    "version": "150.0.7869.0",
     "description": "Chromium browser compiled with the Clang/LLVM compiler.",
     "homepage": "https://github.com/RobRich999/Chromium_Clang",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/RobRich999/Chromium_Clang/releases/download/v149.0.7785.0-r1613160-win64-avx512/chrome.zip",
-            "hash": "f6814652b185122118838277e2aec1792803fbb9fca1b98010426251775152a8",
+            "url": "https://github.com/RobRich999/Chromium_Clang/releases/download/v150.0.7869.0-r1639044-win64-avx512/chrome.zip",
+            "hash": "164048b13fb592674df3d928466c48bc3e747f4ab71b628abe10f109d30f06bc",
             "extract_dir": "chrome-win32"
         }
     },
