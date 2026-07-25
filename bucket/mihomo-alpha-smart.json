@@ -1,20 +1,20 @@
 {
-    "version": "alpha-smart-1ea6cfb",
+    "version": "alpha-smart-f35e876",
     "description": "A simple Python Pydantic model for Honkai: Star Rail parsed data from the Mihomo API.",
     "homepage": "https://github.com/vernesong/mihomo",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-amd64-v3-alpha-smart-1ea6cfb.zip",
-            "hash": "42a157abd0416bc28bbba827b2656d9fec8e02653fdf034498d5ea714065cef5"
+            "url": "https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-amd64-v3-alpha-smart-f35e876.zip",
+            "hash": "52491e85bba6a9d155dd07201366a47ba90b37d8ad40fb7734f457c287913871"
         },
         "32bit": {
-            "url": "https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-386-alpha-smart-1ea6cfb.zip",
-            "hash": "2f9b12f349682bfdae0aa1571e72ccd20d8f9044f110f4c139a9796901e49984"
+            "url": "https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-386-alpha-smart-f35e876.zip",
+            "hash": "f0005310d7c15797d17d819164bece380a8334e417c34f66dbbf987cc956348a"
         },
         "arm64": {
-            "url": "https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-arm64-alpha-smart-1ea6cfb.zip",
-            "hash": "bb4c206cc6395c10528b00c76032006ad6a4beca48f5195db352a78263fa33d8"
+            "url": "https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-windows-arm64-alpha-smart-f35e876.zip",
+            "hash": "cc33db4ad03c2e2f477f5782e292589d481f70ae02e613e9eda9015d310df4a8"
         }
     },
     "pre_install": "Get-ChildItem \"$dir\\mihomo*.exe\" | Rename-Item -NewName 'mihomo.exe'",
