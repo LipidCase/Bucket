@@ -1,10 +1,10 @@
 {
-    "version": "4.8",
+    "version": "4.9",
     "description": "Open-source desktop app for local LLMs with text, vision and tool-calling support (portable, AMD ROCm build)",
     "homepage": "https://github.com/oobabooga/textgen",
     "license": "AGPL-3.0-only",
-    "url": "https://github.com/oobabooga/textgen/releases/download/v4.8/textgen-portable-4.8-windows-rocm7.2.zip",
-    "hash": "564c2d17b014253c530f7f04475373125969fdb3b62894aabcee8cf920cd6f72",
+    "url": "https://github.com/oobabooga/textgen/releases/download/v4.9/textgen-portable-4.9-windows-rocm7.2.zip",
+    "hash": "12289a71f8fcb8b7f1fc7b5f81414cca936288c8017e46abf40a130c2d2f8460",
     "persist": "user_data",
     "bin": [
         [
