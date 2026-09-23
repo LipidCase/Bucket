@@ -1,0 +1,37 @@
+{
+    "version": "4.8",
+    "description": "Open-source desktop app for local LLMs with text, vision and tool-calling support (portable, AMD ROCm build)",
+    "homepage": "https://github.com/oobabooga/textgen",
+    "license": "AGPL-3.0-only",
+    "url": "https://github.com/oobabooga/textgen/releases/download/v4.8/textgen-portable-4.8-windows-rocm7.2.zip",
+    "hash": "564c2d17b014253c530f7f04475373125969fdb3b62894aabcee8cf920cd6f72",
+    "persist": "user_data",
+    "bin": [
+        [
+            "textgen.bat",
+            "textgen-rocm"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "textgen.bat",
+            "textgen (ROCm)"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/oobabooga/textgen/releases/latest",
+        "regex": "textgen-portable-([\\d.]+)-windows-(?<rocmtag>rocm[\\d.]+)\\.zip",
+        "reverse": true
+    },
+    "autoupdate": {
+        "url": "https://github.com/oobabooga/textgen/releases/download/v$version/textgen-portable-$version-windows-$matchRocmtag.zip",
+        "hash": {
+            "url": "https://api.github.com/repos/oobabooga/textgen/releases/tags/v$version",
+            "jsonpath": "$.assets[?(@.name=='textgen-portable-$version-windows-$matchRocmtag.zip')].digest"
+        }
+    },
+    "notes": [
+        "Models, characters and settings are stored in the persisted 'user_data' directory.",
+        "Launch via the 'textgen (ROCm)' Start Menu shortcut or by running 'textgen-rocm' in a terminal."
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "version": "4.8",
+    "description": "Open-source desktop app for local LLMs with text, vision and tool-calling support (portable, legacy CUDA build for older drivers/GPUs)",
+    "homepage": "https://github.com/oobabooga/textgen",
+    "license": "AGPL-3.0-only",
+    "url": "https://github.com/oobabooga/textgen/releases/download/v4.8/textgen-portable-4.8-windows-cuda12.4.zip",
+    "hash": "753049bff2dc30a7515c9eec6a50ee81ddc550599646b5d3cf263c039c372deb",
+    "persist": "user_data",
+    "bin": [
+        [
+            "textgen.bat",
+            "textgen-cuda-legacy"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "textgen.bat",
+            "textgen (CUDA legacy)"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/oobabooga/textgen/releases/latest",
+        "regex": "textgen-portable-([\\d.]+)-windows-(?<cudatag>cuda[\\d.]+)\\.zip"
+    },
+    "autoupdate": {
+        "url": "https://github.com/oobabooga/textgen/releases/download/v$version/textgen-portable-$version-windows-$matchCudatag.zip",
+        "hash": {
+            "url": "https://api.github.com/repos/oobabooga/textgen/releases/tags/v$version",
+            "jsonpath": "$.assets[?(@.name=='textgen-portable-$version-windows-$matchCudatag.zip')].digest"
+        }
+    },
+    "notes": [
+        "This manifest always tracks the oldest CUDA build of each release (currently CUDA 12.4). For the newest CUDA build install 'textgen-portable-cuda'.",
+        "Models, characters and settings are stored in the persisted 'user_data' directory.",
+        "Launch via the 'textgen (CUDA legacy)' Start Menu shortcut or by running 'textgen-cuda-legacy' in a terminal."
+    ]
+}

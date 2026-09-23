@@ -1,0 +1,35 @@
+{
+    "version": "4.8",
+    "description": "Open-source desktop app for local LLMs with text, vision and tool-calling support (portable, CPU-only build)",
+    "homepage": "https://github.com/oobabooga/textgen",
+    "license": "AGPL-3.0-only",
+    "url": "https://github.com/oobabooga/textgen/releases/download/v4.8/textgen-portable-4.8-windows-cpu.zip",
+    "hash": "115bea226c20cc493c84cc53e56a2b9af2989fa7098fbf0563f45418adff490d",
+    "persist": "user_data",
+    "bin": [
+        [
+            "textgen.bat",
+            "textgen-cpu"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "textgen.bat",
+            "textgen (CPU)"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/oobabooga/textgen"
+    },
+    "autoupdate": {
+        "url": "https://github.com/oobabooga/textgen/releases/download/v$version/textgen-portable-$version-windows-cpu.zip",
+        "hash": {
+            "url": "https://api.github.com/repos/oobabooga/textgen/releases/tags/v$version",
+            "jsonpath": "$.assets[?(@.name=='textgen-portable-$version-windows-cpu.zip')].digest"
+        }
+    },
+    "notes": [
+        "Models, characters and settings are stored in the persisted 'user_data' directory.",
+        "Launch via the 'textgen (CPU)' Start Menu shortcut or by running 'textgen-cpu' in a terminal."
+    ]
+}

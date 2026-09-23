@@ -1,0 +1,35 @@
+{
+    "version": "4.8",
+    "description": "Open-source desktop app for local LLMs with text, vision and tool-calling support (portable, Vulkan build)",
+    "homepage": "https://github.com/oobabooga/textgen",
+    "license": "AGPL-3.0-only",
+    "url": "https://github.com/oobabooga/textgen/releases/download/v4.8/textgen-portable-4.8-windows-vulkan.zip",
+    "hash": "16013c3d336db474dba4d3bb95873071b0947d04a1da48a43b8b30d66eedc3b0",
+    "persist": "user_data",
+    "bin": [
+        [
+            "textgen.bat",
+            "textgen-vulkan"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "textgen.bat",
+            "textgen (Vulkan)"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/oobabooga/textgen"
+    },
+    "autoupdate": {
+        "url": "https://github.com/oobabooga/textgen/releases/download/v$version/textgen-portable-$version-windows-vulkan.zip",
+        "hash": {
+            "url": "https://api.github.com/repos/oobabooga/textgen/releases/tags/v$version",
+            "jsonpath": "$.assets[?(@.name=='textgen-portable-$version-windows-vulkan.zip')].digest"
+        }
+    },
+    "notes": [
+        "Models, characters and settings are stored in the persisted 'user_data' directory.",
+        "Launch via the 'textgen (Vulkan)' Start Menu shortcut or by running 'textgen-vulkan' in a terminal."
+    ]
+}
