@@ -1,10 +1,10 @@
 {
-    "version": "4.8",
+    "version": "4.9",
     "description": "Open-source desktop app for local LLMs with text, vision and tool-calling support (portable, legacy CUDA build for older drivers/GPUs)",
     "homepage": "https://github.com/oobabooga/textgen",
     "license": "AGPL-3.0-only",
-    "url": "https://github.com/oobabooga/textgen/releases/download/v4.8/textgen-portable-4.8-windows-cuda12.4.zip",
-    "hash": "753049bff2dc30a7515c9eec6a50ee81ddc550599646b5d3cf263c039c372deb",
+    "url": "https://github.com/oobabooga/textgen/releases/download/v4.9/textgen-portable-4.9-windows-cuda12.4.zip",
+    "hash": "67441597c868c5fcaeba0a8a948a3aac7e65e40f085b2d0ca0308dc6bb0ca2a7",
     "persist": "user_data",
     "bin": [
         [
