@@ -1,10 +1,10 @@
 {
-    "version": "4.8",
+    "version": "4.9",
     "description": "Open-source desktop app for local LLMs with text, vision and tool-calling support (portable, CPU-only build)",
     "homepage": "https://github.com/oobabooga/textgen",
     "license": "AGPL-3.0-only",
-    "url": "https://github.com/oobabooga/textgen/releases/download/v4.8/textgen-portable-4.8-windows-cpu.zip",
-    "hash": "115bea226c20cc493c84cc53e56a2b9af2989fa7098fbf0563f45418adff490d",
+    "url": "https://github.com/oobabooga/textgen/releases/download/v4.9/textgen-portable-4.9-windows-cpu.zip",
+    "hash": "736da6403d4d54f6ee4836b1789c6c2e35f7ceef840d341c921643f262f3dcdc",
     "persist": "user_data",
     "bin": [
         [
