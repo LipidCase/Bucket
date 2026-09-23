@@ -5,6 +5,7 @@
     "license": "AGPL-3.0-only",
     "url": "https://github.com/oobabooga/textgen/releases/download/v4.9/textgen-portable-4.9-windows-vulkan.zip",
     "hash": "91c9ed2302e574be698021b4153e48a32a5cb9a6297db8d949bf8639585844af",
+    "extract_dir": "textgen-4.9",
     "persist": "user_data",
     "bin": [
         [
@@ -23,6 +24,7 @@
     },
     "autoupdate": {
         "url": "https://github.com/oobabooga/textgen/releases/download/v$version/textgen-portable-$version-windows-vulkan.zip",
+        "extract_dir": "textgen-$version",
         "hash": {
             "url": "https://api.github.com/repos/oobabooga/textgen/releases/tags/v$version",
             "jsonpath": "$.assets[?(@.name=='textgen-portable-$version-windows-vulkan.zip')].digest"

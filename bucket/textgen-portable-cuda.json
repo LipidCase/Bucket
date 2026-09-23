@@ -5,6 +5,7 @@
     "license": "AGPL-3.0-only",
     "url": "https://github.com/oobabooga/textgen/releases/download/v4.9/textgen-portable-4.9-windows-cuda13.1.zip",
     "hash": "9f55bebf458776b2d8c10af457d60dfd1a772f8ed724bcfa3905137452a8847e",
+    "extract_dir": "textgen-4.9",
     "persist": "user_data",
     "bin": [
         [
@@ -25,6 +26,7 @@
     },
     "autoupdate": {
         "url": "https://github.com/oobabooga/textgen/releases/download/v$version/textgen-portable-$version-windows-$matchCudatag.zip",
+        "extract_dir": "textgen-$version",
         "hash": {
             "url": "https://api.github.com/repos/oobabooga/textgen/releases/tags/v$version",
             "jsonpath": "$.assets[?(@.name=='textgen-portable-$version-windows-$matchCudatag.zip')].digest"
